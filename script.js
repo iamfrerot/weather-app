@@ -36,9 +36,9 @@ search.addEventListener('click', () => {
       weatherBox.classList.add('active');
       weatherDetails.classList.add('active');
       error404.classList.remove('active');
-      setTimeout(() => {
-        container.classList.remove('active');
-      }, 2500);
+      // setTimeout(() => {
+      //   container.classList.remove('active');
+      // }, 2500);
 
       switch (json.weather[0].main) {
         case 'Clear':
@@ -90,13 +90,13 @@ search.addEventListener('click', () => {
 
 
 
-      setTimeout(() => {
-        infoWeather.insertAdjacentElement('afterend', elCloneInfoWeather);
+      // setTimeout(() => {
+      //   infoWeather.insertAdjacentElement('afterend', elCloneInfoWeather);
 
-        infoWind.insertAdjacentElement('afterend', elCloneInfoWind);
-        infoHumidity.insertAdjacentElement('afterend', elCloneInfoHumidity);
+      //   infoWind.insertAdjacentElement('afterend', elCloneInfoWind);
+      //   infoHumidity.insertAdjacentElement('afterend', elCloneInfoHumidity);
 
-      }, 2200);
+      // }, 2200);
       const cloneInfoWeather = document.querySelectorAll('.info-weather.active-clone');
       const totalcloneInfoWeather = cloneInfoWeather.length;
       const cloneInfoWeatherFirst = cloneInfoWeather[0];
@@ -115,9 +115,11 @@ search.addEventListener('click', () => {
         cloneInfoWindFirst.classList.remove('active-clone');
       }
 
-      setTimeout(() => {
-
-      }, 2200);
+      //  setTimeout(() => {
+      //   cloneInfoWeatherFirst.remove('');
+      //   cloneInfoHumidityFirst.remove('');
+      //   cloneInfoWindFirst.remove('');
+      //  }, 2200);
     }
 
 
